@@ -9,4 +9,37 @@
 body {
     height: 100vh;
     font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.items-wrapper {
+    width: 100%;
+    overflow: hidden;
+    margin-top: -20vh;
+}
+
+.items {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.item {
+    flex: none; /*Cancela todo o comportamento do display flex*/
+    width: fit-content;
+    scroll-snap-align: start;
+    pointer-events: none;
+}
+
+img {
+    width: 100%;
 }
