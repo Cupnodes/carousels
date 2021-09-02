@@ -45,17 +45,3 @@ label5.addEventListener('click', () => {
     firstSlideImage.style.marginLeft="-320vw";
 });
 
-function format(string) {
-    return string.slice(-1);
-}
-
-function scrollCarousel() {
-    const currentSlide = slides[currentActive[order]];
-    
-}
-
-window.setInterval(() => {
-    scrollCarousel();
-}, 3000)
-
-console.log()
