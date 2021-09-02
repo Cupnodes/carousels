@@ -3,12 +3,7 @@ const label2 = document.querySelector('label[for="radio2"]');
 const label3 = document.querySelector('label[for="radio3"]');
 const label4 = document.querySelector('label[for="radio4"]');
 const label5 = document.querySelector('label[for="radio5"]');
-const slides = document.querySelector('.slides');
-const radio1 = document.querySelector('#radio1');
-const radio2 = document.querySelector('#radio2');
-const radio3 = document.querySelector('#radio3');
-const radio4 = document.querySelector('#radio4');
-const radio5 = document.querySelector('#radio5');
+const slides = document.querySelectorAll('.slides');
 const firstSlideImage = document.getElementById('first');
 
 label1.setAttribute('id','active');
@@ -50,36 +45,17 @@ label5.addEventListener('click', () => {
     firstSlideImage.style.marginLeft="-320vw";
 });
 
-radio1.addEventListener('click', () => {
-    if (radio1.checked) {
-        console.log('epa');
-    }
-})
+function format(string) {
+    return string.slice(-1);
+}
 
-radio2.addEventListener('click', () => {
-    if (radio2.checked) {
-        console.log('epa');
-    }
-})
-
-radio3.addEventListener('click', () => {
-    if (radio3.checked) {
-        console.log('epa');
-    }
-})
-
-radio4.addEventListener('click', () => {
-    if (radio4.checked) {
-        console.log('epa');
-    }
-})
-
-radio5.addEventListener('click', () => {
-    if (radio5.checked) {
-        console.log('epa');
-    }
-})
+function scrollCarousel() {
+    const currentSlide = slides[currentActive[order]];
+    
+}
 
 window.setInterval(() => {
-    
+    scrollCarousel();
 }, 3000)
+
+console.log()
