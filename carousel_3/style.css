@@ -6,27 +6,5 @@
 
 body {
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.carousel-wrapper{
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    height: 100%;
-}
-
-.carousel {
-    display: flex;
-}
-
-.carousel-item {
-    flex: none;   
-    object-fit: cover;
-}
-
-.carousel-item img {
-    width: 100%;
-}
