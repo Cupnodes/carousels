@@ -9,7 +9,6 @@
 body {
     height: 100vh;
     font-family: 'Poppins', sans-serif;
-    background-color: red;
 }
 
 header {
@@ -59,7 +58,7 @@ header ul li a {
 }
 
 header ul li a:hover {
-    color: #ddd;
+    color: #ffeb3b;
 }
 
 .banner {
